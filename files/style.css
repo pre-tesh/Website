@@ -1,0 +1,86 @@
+/* ---------------------------------------------
+   1. Your local font
+   ---------------------------------------------
+   Drop your font file into the /fonts folder,
+   then fix the filename + format below.
+   Common formats: woff2, woff, ttf, otf
+--------------------------------------------- */
+
+@font-face {
+  font-family: "MyFont";
+  src: url("fonts/MangoGrotesque/MangoGrotesque/OpenType-TT/MangoGrotesque-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ---------------------------------------------
+   2. Palette — ~98% white, ~2% green background,
+      hard dark green text
+--------------------------------------------- */
+
+:root {
+  --bg: #021102;
+  --text: #aed2b5;
+  --link: #18dcee;
+}
+
+/* ---------------------------------------------
+   3. Plain layout
+--------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "MyFont", Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+h1 {
+  font-size: 8.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 4.1rem;
+  margin-top: 2rem;
+  margin-bottom: 0.3rem;
+}
+h2 {
+  font-size: 3.9rem;
+  margin-top: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+p {
+   font-size: 2.1rem;
+  margin: 0.2rem ;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #cfe3cf;
+  margin: 2.5rem 0;
+}
